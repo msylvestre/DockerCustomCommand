@@ -1,0 +1,11 @@
+container=$1
+
+if [ -z "$container" ]; then
+   echo "You need to specify a container name from that list :"
+   echo ""
+   lscontainer
+
+else
+   sudo docker exec -it $container bash
+
+fi
