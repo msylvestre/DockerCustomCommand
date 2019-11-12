@@ -1,8 +1,8 @@
 container=$1
 
 if [ -z "$container" ]; then
-   sudo docker container rm $(sudo docker container list -a -q) -f
+   docker container rm $(sudo docker container list -a -q) -f
 
 else
-   sudo docker container rm $container -f
+   docker container rm $container -f
 fi

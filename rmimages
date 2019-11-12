@@ -1,8 +1,8 @@
 image=$1
 
 if [ -z "$image" ]; then
-   sudo docker rmi $(sudo docker images -a -q) -f
+   docker rmi $(sudo docker images -a -q) -f
 
 else
-   sudo docker rmi $image -f
+   docker rmi $image -f
 fi

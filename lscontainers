@@ -1,1 +1,1 @@
-sudo docker container list -a
+docker container list -a
